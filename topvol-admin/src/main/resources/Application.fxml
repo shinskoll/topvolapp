@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="350" prefWidth="890" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<TabPane prefHeight="340" prefWidth="711.0">
+			<tabs>
+				<Tab closable="false" text="Utilisateurs">
+					<content>
+						<fx:include fx:id="vueUtilisateur" source="compte/Utilisateur.fxml" />
+					</content>
+				</Tab>
+				<Tab closable="false" text="Réservations">
+					<content>
+					</content>
+				</Tab>
+				<Tab closable="false" text="Vols en cours">
+					<content>
+					</content>
+				</Tab>
+				<Tab closable="false" text="Villes &amp; aéroports">
+					<content>
+					</content>
+				</Tab>
+				<Tab closable="false" text="Avions">
+					<content>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</VBox>

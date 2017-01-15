@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html5/loose.dtd">
+<html ng-app="topVolApp">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+   	<title>TopVol: Destination le monde</title>
+	<link href="static/css/angular-growl.min.css" rel="stylesheet" media="screen">
+	<link href="static/css/datepicker.css" rel="stylesheet" media="screen">
+	<link href="static/css/carousel.css" rel="stylesheet" />
+	<link href="static/css/style.css" rel="stylesheet" />
+	<link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div class="navbar-wrapper">
+      <div class="container">
+      <div class="row">
+        <nav class="navbar navbar-inverse" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">TopVol!</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#vols">Vols</a></li>
+                <li><a href="#login">Se connecter</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="navbar-fixed-top" growl></div>
+      <div class="row">
+      	<div ng-view growl></div>
+      </div>
+	   <footer>
+        <p>&copy; 2014 NFA019, Inc.</p>
+      </footer>
+      </div>
+      </div>
+    <script type="text/javascript" charset="utf-8" language="javascript"
+		src="static/js/angular.js"></script>
+	<script type="text/javascript" charset="utf-8" language="javascript"
+		src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" charset="utf-8" language="javascript"
+		src="static/js/angular-growl.min.js"></script>
+	<script type="text/javascript" charset="utf-8" language="javascript"
+		src="static/js/topvol.js"></script>
+	<script type="text/javascript" charset="utf-8" language="javascript"
+		src="static/js/bootstrap-datepicker.js"></script>
+</body>
+</html>

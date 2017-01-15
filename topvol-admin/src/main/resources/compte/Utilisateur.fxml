@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ComboBox?>
+
+<AnchorPane prefHeight="319.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nfa019.topvol.admin.compte.UtilisateurControlleur">
+	<children>
+		<TableView fx:id="tableUtilisateur" editable="true" layoutX="4.0" layoutY="10.0" prefHeight="263.0" prefWidth="783.0">
+			<columns>
+				<TableColumn fx:id="colonneIdentifiant" prefWidth="130" text="Identifiant" />
+				<TableColumn fx:id="colonneMotDePasse" prefWidth="130" text="Mot de passe" />
+				<TableColumn fx:id="colonneNom" prefWidth="130" text="Nom" />
+				<TableColumn fx:id="colonnePrenom" prefWidth="130" text="Prénom" />
+				<TableColumn fx:id="colonneMail" prefWidth="130" text="Mail" />
+				<TableColumn fx:id="colonneRole" prefWidth="130" text="Role" />
+			</columns>
+		</TableView>
+      <Button layoutX="798.0" layoutY="40.0" mnemonicParsing="false" onAction="#rafraichir" prefHeight="26.0" prefWidth="80.0" text="Rafraichir" />
+      <Button layoutX="798.0" layoutY="276.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="26.0" prefWidth="80.0" text="Ajouter" />
+      <Button layoutX="798.0" layoutY="86.0" mnemonicParsing="false" onAction="#supprimer" text="Supprimer" />
+      <TextField fx:id="nouveauIdentifiant" layoutX="4.0" layoutY="278.0" prefHeight="26.0" prefWidth="130" />
+      <TextField fx:id="nouveauMotDePasse" layoutX="135.0" layoutY="278.0" prefHeight="26.0" prefWidth="130" />
+      <TextField fx:id="nouveauNom" layoutX="266.0" layoutY="278.0" prefHeight="26.0" prefWidth="130" />
+      <TextField fx:id="nouveauPrenom" layoutX="397.0" layoutY="278.0" prefHeight="26.0" prefWidth="130" />
+      <TextField fx:id="nouveauMail" layoutX="528.0" layoutY="278.0" prefHeight="26.0" prefWidth="130" />
+      <ComboBox  fx:id="nouveauRole" layoutX="659.0" layoutY="278.0" prefHeight="26.0" prefWidth="130.0"/>
+	</children>
+</AnchorPane>
